@@ -14,7 +14,7 @@ public class Main {
         Requests request = new Requests();
 
         try {
-            data= csvUtility.readFile("C:\\Users\\odunc\\Desktop\\gantepBusStopsFinalPos1.csv");
+            data= csvUtility.readFile("C:\\Users\\odunc\\Desktop\\example.csv");
             System.out.println(data);
             for (int i = 1; i < data.size(); i++) {
 
@@ -38,11 +38,11 @@ public class Main {
 
             }
 
-            csvUtility.writeToFile("C:\\Users\\odunc\\Desktop\\gantepBusStopsFinalPos2.csv",data);
+            csvUtility.writeToFile("C:\\Users\\odunc\\Desktop\\result.csv",data);
 
         } catch (Exception e) {
             System.out.println("oh GOD");
-            csvUtility.writeToFile("C:\\Users\\odunc\\Desktop\\gantepBusStopsFinalPos2.csv",data);
+            csvUtility.writeToFile("C:\\Users\\odunc\\Desktop\\result.csv",data);
             //e.printStackTrace();
 
 
